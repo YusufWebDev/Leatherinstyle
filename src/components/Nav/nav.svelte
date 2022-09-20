@@ -1,10 +1,9 @@
-<script>
-	import { logo, modalBaseUrl } from "../../stores/modalStore";
-</script>
-
 <div class="header">
 	<div class="logo">
-		<img src={$modalBaseUrl + $logo.url} alt={$logo.alt} />
+		<img
+			src="https://ik.imagekit.io/YusufWebDev/Leather_in_Style/Logo.png"
+			alt="Leather in style logo"
+		/>
 	</div>
 	<nav class="nav">
 		<ul>
