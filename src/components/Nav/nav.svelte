@@ -1,7 +1,7 @@
 <div class="header">
 	<div class="logo">
 		<img
-			src="https://ik.imagekit.io/YusufWebDev/Leather_in_Style/Logo.png"
+			src="https://ik.imagekit.io/YusufWebDev/Leather_in_Style/tr:w-200/Logo.png"
 			alt="Leather in style logo"
 		/>
 	</div>

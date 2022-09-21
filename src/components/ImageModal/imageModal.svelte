@@ -21,7 +21,7 @@
 <!-- src="https://ik.imagekit.io/YusufWebDev/RHDesigns/vinylGallery/tr:w-1440/MILNERTON.webp" -->
 
 <div class="modal" on:click={closeModal}>
-	<div class="image-container" transition:fade>
+	<div class="image-container" transition:fade={{ duration: 300 }}>
 		<div class="loading">
 			<Spinner />
 		</div>
