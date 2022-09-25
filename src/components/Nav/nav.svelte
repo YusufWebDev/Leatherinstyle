@@ -1,7 +1,7 @@
 <div class="header">
 	<div class="logo">
 		<img
-			src="https://ik.imagekit.io/YusufWebDev/Leather_in_Style/tr:w-200/Logo.png"
+			src="https://ik.imagekit.io/YusufWebDev/Leather_in_Style/Leather_in_Style_Logo_Main.png"
 			alt="Leather in style logo"
 		/>
 	</div>
@@ -15,30 +15,54 @@
 
 <style>
 	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.8);
+		border-radius: 0px 0px 25px 25px;
+		width: 100%;
+		height: auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 2rem;
+		background-color: rgb(251, 213, 255);
+		margin-bottom: 1rem;
 	}
 	.logo {
-		width: 200px;
-		height: 200px;
+		min-width: 300px;
+		padding: 1rem;
+		width: auto;
+		height: auto;
 	}
 	.logo img {
 		width: 100%;
 		height: 100%;
+		filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.2));
 	}
 	.nav ul {
 		display: flex;
 	}
 	.nav ul li {
 		list-style: none;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		margin: 1.5rem;
 	}
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 800px) {
 		.header {
 			flex-direction: column;
+			max-height: 150px;
+			min-width: 300px;
+		}
+		.nav ul li {
+			list-style: none;
+			font-size: 1rem;
+			margin: 0 1rem;
+		}
+		.logo {
+			max-height: 75%;
+			max-width: 75%;
+			padding: 0rem;
 		}
 	}
 </style>

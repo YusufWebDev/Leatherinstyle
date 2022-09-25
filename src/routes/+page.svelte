@@ -24,5 +24,6 @@
 <style>
 	.main {
 		align-items: center;
+		min-width: 300px;
 	}
 </style>

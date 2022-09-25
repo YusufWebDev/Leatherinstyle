@@ -10,7 +10,6 @@
 		w800,
 		w900,
 		w1200,
-		w1440,
 	} from "../../stores/modalStore.js";
 	import Spinner from "../spinner.svelte";
 	function closeModal() {
@@ -52,7 +51,7 @@
 	// console.log($allImages);
 </script>
 
-<!-- src="https://ik.imagekit.io/YusufWebDev/RHDesigns/vinylGallery/tr:w-1440/MILNERTON.webp" -->
+<!-- src="https://ik.imagekit.io/YusufWebDev/RHDesigns/vinylGallery/tr:w-800/MILNERTON.webp" -->
 
 <div class="modal">
 	<div class="close" on:click={closeModal}>&times;</div>
@@ -65,9 +64,8 @@
 			class="image"
 			src={$modalBaseUrl + $modalImage}
 			srcset="{$modalBaseUrl + $w800 + $modalImage} 800w,
-		{$modalBaseUrl + $w900 + $modalImage} 900w,
-		{$modalBaseUrl + $w1200 + $modalImage} 1200w,
-		{$modalBaseUrl + $w1440 + $modalImage} 1440"
+			{$modalBaseUrl + $w900 + $modalImage} 900w,
+			{$modalBaseUrl + $w1200 + $modalImage} 1200w"
 			alt="some leather products from leather in style"
 		/>
 	</div>
@@ -99,7 +97,7 @@
 		font-size: 2rem;
 		background-color: transparent;
 		border: none;
-		color: #555;
+		color: #eee;
 		z-index: 5;
 		cursor: pointer;
 	}
