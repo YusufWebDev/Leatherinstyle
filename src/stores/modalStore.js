@@ -6,6 +6,7 @@ export let modalBaseUrl = writable("");
 export let modalImage = writable("")
 export let allImages = writable()
 export let modalImageSet = writable("")
+export let modalImageIndex = writable()
 
 export let w250 = writable("tr:w-250/");
 export let w350 = writable("tr:w-350/");
