@@ -1,4 +1,4 @@
-<div id="loading" />
+<div id="loading">&nbsp;</div>
 
 <style>
 	#loading {

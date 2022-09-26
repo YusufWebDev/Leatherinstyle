@@ -1,3 +1,7 @@
+<script>
+	import { fly } from "svelte/transition";
+</script>
+
 <div class="header">
 	<div class="logo">
 		<img
@@ -7,13 +11,16 @@
 	</div>
 	<nav class="nav">
 		<ul>
-			<li>Contact</li>
+			<li><a href="/contact">Contact</a></li>
 			<li>How to Order</li>
 		</ul>
 	</nav>
 </div>
 
 <style>
+	a {
+		text-decoration: none;
+	}
 	.header {
 		position: fixed;
 		top: 0;

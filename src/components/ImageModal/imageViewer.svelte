@@ -1,12 +1,12 @@
 <script>
 	import { allImages } from "./../../stores/modalStore.js";
 	import ImageCard from "./imageCard.svelte";
-	import { scale } from "svelte/transition";
+	import { fade } from "svelte/transition";
 </script>
 
 <div class="grid-container">
 	{#each $allImages as image, index}
-		<div in:scale={{ duration: 75, delay: index * 50 }}>
+		<div in:fade={{ duration: 300, delay: index * 25 }}>
 			<ImageCard imageName={image.url} alt={image.alt} />
 		</div>
 	{/each}

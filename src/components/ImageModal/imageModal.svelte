@@ -1,5 +1,5 @@
 <script>
-	import { blur } from "svelte/transition";
+	import { blur, fade } from "svelte/transition";
 	import {
 		modalBaseUrl,
 		modalOpen,
@@ -53,7 +53,7 @@
 
 <!-- src="https://ik.imagekit.io/YusufWebDev/RHDesigns/vinylGallery/tr:w-800/MILNERTON.webp" -->
 
-<div class="modal">
+<div class="modal" transition:fade>
 	<div class="close" on:click={closeModal}>&times;</div>
 	<div class="image-container" transition:blur={{ amount: 25 }}>
 		<div class="loading">
@@ -70,8 +70,8 @@
 		/>
 	</div>
 	<div class="arrows">
-		<button class="arrow left" on:click={previousModalImage}>&lArr;</button>
-		<button class="arrow right" on:click={nextModalImage}>&rAarr;</button>
+		<button class="arrow left" on:click={previousModalImage}>&#8249;</button>
+		<button class="arrow right" on:click={nextModalImage}>&#8250;</button>
 	</div>
 </div>
 
@@ -80,21 +80,23 @@
 		position: absolute;
 		display: grid;
 		place-items: center;
-		top: 20px;
+		top: 25px;
 		right: 20px;
-		width: 100px;
-		height: 100px;
+		width: 35px;
+		height: 35px;
 		/* background-color: red; */
 		color: #fff;
 		cursor: pointer;
-		font-size: 3rem;
-		color: #eee;
+		font-size: 2rem;
+		color: #000;
 		z-index: 100;
+		background-color: #fff;
+		border-radius: 50%;
 	}
 
 	.arrow {
 		outline: none;
-		font-size: 2rem;
+		font-size: 5rem;
 		background-color: transparent;
 		border: none;
 		color: #eee;
@@ -106,7 +108,6 @@
 		/* background-color: red; */
 		width: 100%;
 		height: 25%;
-
 		display: grid;
 		justify-self: center;
 		align-items: stretch;
@@ -172,9 +173,8 @@
 			padding: 0;
 		}
 		.close {
-			right: 0;
-			place-items: end;
-			padding: 0.5rem;
+			right: 10px;
+			place-items: center;
 		}
 		.right {
 			padding-right: 0.5rem;

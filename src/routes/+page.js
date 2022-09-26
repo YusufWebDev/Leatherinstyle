@@ -31,6 +31,18 @@ export function load(){
         {url:"28.jpg", alt:"image of a leather bag"},
         {url:"29.jpg", alt:"image of a leather bag"},
         {url:"30.jpg", alt:"image of a leather bag"},        
+        {url:"31.jpg", alt:"image of a leather bag"},
+        {url:"32.jpg", alt:"image of a leather bag"},
+        {url:"33.jpg", alt:"image of a leather bag"},
+        {url:"34.jpg", alt:"image of a leather bag"},
+        {url:"35.jpg", alt:"image of a leather bag"},
+        {url:"36.jpg", alt:"image of a leather bag"},
+        {url:"37.jpg", alt:"image of a leather bag"},
+        {url:"38.jpg", alt:"image of a leather bag"},
+        {url:"39.jpg", alt:"image of a leather bag"},
+        {url:"40.jpg", alt:"image of a leather bag"},        
+        {url:"41.jpg", alt:"image of a leather bag"},        
+        {url:"42.jpg", alt:"image of a leather bag"},        
     ];
 
     return{

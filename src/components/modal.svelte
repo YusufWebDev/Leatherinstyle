@@ -1,4 +1,8 @@
-<div class="modal">
+<script>
+	import { fade } from "svelte/transition";
+</script>
+
+<div class="modal" transition:fade>
 	<slot />
 </div>
 
@@ -12,7 +16,7 @@
 		transform: translate(-50%, -50%);
 		width: 100vw;
 		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgb(138, 136, 136);
 		z-index: 20;
 		place-items: center;
 	}
