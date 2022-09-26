@@ -18,15 +18,15 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.8);
-		border-radius: 0px 0px 25px 25px;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 0px 0px 15px 15px;
 		width: 100%;
 		height: auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 2rem;
-		background-color: rgb(251, 213, 255);
+		background-color: rgb(255, 252, 244);
 		margin-bottom: 1rem;
 	}
 	.logo {
