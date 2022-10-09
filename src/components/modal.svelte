@@ -16,7 +16,7 @@
 		transform: translate(-50%, -50%);
 		width: 100vw;
 		height: 100vh;
-		background-color: rgb(138, 136, 136);
+		background-color: #ddd;
 		z-index: 20;
 		place-items: center;
 	}

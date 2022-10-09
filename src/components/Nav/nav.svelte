@@ -11,8 +11,8 @@
 	</div>
 	<nav class="nav">
 		<ul>
-			<li><a href="/contact">Contact</a></li>
-			<li>How to Order</li>
+			<li><a href="/contact">I'm Interested</a></li>
+			<!-- <li>How to Order</li> -->
 		</ul>
 	</nav>
 </div>

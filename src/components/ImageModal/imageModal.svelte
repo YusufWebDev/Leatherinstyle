@@ -10,6 +10,7 @@
 		w800,
 		w900,
 		w1200,
+		w1440,
 	} from "../../stores/modalStore.js";
 	import Spinner from "../spinner.svelte";
 	function closeModal() {
@@ -65,7 +66,8 @@
 			src={$modalBaseUrl + $modalImage}
 			srcset="{$modalBaseUrl + $w800 + $modalImage} 800w,
 			{$modalBaseUrl + $w900 + $modalImage} 900w,
-			{$modalBaseUrl + $w1200 + $modalImage} 1200w"
+			{$modalBaseUrl + $w1200 + $modalImage} 1200w,
+			{$modalBaseUrl + $w1440 + $modalImage} 1250w"
 			alt="some leather products from leather in style"
 		/>
 	</div>

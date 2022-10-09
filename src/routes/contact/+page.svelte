@@ -2,6 +2,7 @@
 	import Modal from "../../components/modal.svelte";
 	import { goto } from "$app/navigation";
 	import Svg from "../../icons/facebook.png";
+	import { fly } from "svelte/transition";
 
 	function closeModal() {
 		goto("/");
@@ -9,7 +10,7 @@
 </script>
 
 <Modal>
-	<div class="card">
+	<div class="card" in:fly={{ y: -100, delay: 100 }}>
 		<div class="close" on:click={closeModal}>&times;</div>
 		<div class="title">
 			<div class="image">
@@ -18,7 +19,7 @@
 					alt=" line drawing of a bag"
 				/>
 			</div>
-			<h3>Contact Me</h3>
+			<h4>Contact Me</h4>
 			<hr />
 		</div>
 		<div class="info">
@@ -36,25 +37,29 @@
 
 <style>
 	.card {
-		padding: 1rem;
+		padding: 0.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-evenly;
 		height: 350px;
 		width: 340px;
-		background-color: rgba(250, 208, 208, 0.685);
-		border-radius: 20px;
-		box-shadow: 2px 5px 8px rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
 	}
 	.image {
-		width: 90%;
+		width: 40%;
 		height: auto;
 		text-align: center;
 		margin: 0 auto;
 	}
+
+	.image img {
+		width: 80%;
+	}
 	.title {
-		font-size: 2rem;
+		font-size: 1.85rem;
 	}
 
 	.info {
@@ -69,7 +74,8 @@
 	}
 	.email,
 	.cell {
-		font-size: 1.1rem;
+		margin-bottom: 0.25rem;
+		font-size: 1rem;
 	}
 	.close {
 		position: absolute;
