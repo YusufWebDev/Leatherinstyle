@@ -61,7 +61,6 @@
 			<Spinner />
 		</div>
 		<img
-			sizes="(max-width: 1200px) 1200px"
 			class="image"
 			src={$modalBaseUrl + $modalImage}
 			srcset="{$modalBaseUrl + $w800 + $modalImage} 800w,
