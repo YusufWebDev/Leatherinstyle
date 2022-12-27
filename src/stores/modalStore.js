@@ -8,7 +8,7 @@ export let allImages = writable()
 export let modalImageSet = writable("")
 export let modalImageIndex = writable()
 
-export let w250 = writable("tr:w-200/");
+export let w250 = writable("tr:w-250/");
 export let w350 = writable("tr:w-350/");
 export let w500 = writable("tr:w-500/");
 export let w600 = writable("tr:w-600/");

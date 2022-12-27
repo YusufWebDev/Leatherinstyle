@@ -6,7 +6,7 @@
 
 <div class="grid-container">
 	{#each $allImages as image, index}
-		<div in:fade={{ duration: 200 }}>
+		<div in:fade={{ duration: 200, delay: index * 25 }}>
 			<ImageCard imageName={image.url} alt={image.alt} />
 		</div>
 	{/each}

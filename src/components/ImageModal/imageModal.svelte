@@ -56,11 +56,12 @@
 
 <div class="modal" transition:fade>
 	<div class="close" on:click={closeModal}>&times;</div>
-	<div class="image-container" transition:blur={{ amount: 25 }}>
+	<div class="image-container" transition:blur={{ amount: 55 }}>
 		<div class="loading">
 			<Spinner />
 		</div>
 		<img
+			sizes="(max-width: 1200px) 1200px"
 			class="image"
 			src={$modalBaseUrl + $modalImage}
 			srcset="{$modalBaseUrl + $w800 + $modalImage} 800w,
@@ -68,6 +69,7 @@
 			{$modalBaseUrl + $w1200 + $modalImage} 1200w,
 			{$modalBaseUrl + $w1440 + $modalImage} 1250w"
 			alt="some leather products from leather in style"
+			loading="lazy"
 		/>
 	</div>
 	<div class="arrows">

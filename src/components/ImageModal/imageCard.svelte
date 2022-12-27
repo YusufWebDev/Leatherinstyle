@@ -15,7 +15,12 @@
 </script>
 
 <div class="image-container" on:click={openModal}>
-	<img class="image" src={$modalBaseUrl + $w250 + imageName} {alt} />
+	<img
+		class="image"
+		src={$modalBaseUrl + $w250 + imageName}
+		{alt}
+		loading="lazy"
+	/>
 </div>
 
 <style>
